@@ -1,0 +1,36 @@
+    <div id="nav">
+        <div id="nav-title">
+        </div>
+        <div id="nav-links">
+            <ul>
+                <a href="../"><li>Home</li></a>
+                <a href="../command-leadership/"><li>Command Leadership</li></a>
+                <a href="../contact/"><li>Contact Us</li></a>
+                <a href="../new-arrival/"><li>New Arrival</li></a>
+                <a href="../"><li>Privacy Policy</li></a>
+                <a href="../links/"><li>Links</li></a>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#nav').animate({
+                left: '0'
+            }, 1200);
+            $(window).scroll(function () {
+                var top = $(window).scrollTop();
+
+                if (top <= 80) {
+                    $('#nav').animate({
+                        left: '0'
+                    }, 1200);
+                    return false;
+                } else {
+                    $('#nav').stop(true).animate({
+                        left: '100%'
+                    }, 1);
+                    return false;
+                }
+            });
+        });
+    </script>
