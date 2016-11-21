@@ -1,0 +1,57 @@
+footer {
+  background: #dadada;
+}
+
+#scrollDiv {
+   position: relative;
+   bottom: 100px;
+   height: 50px;
+   width: 100px;
+   margin: 0 auto;
+  color: white;
+
+}
+
+@media (max-width: 600px) {
+  #scrollDiv {
+    display: none;
+  }
+}
+
+#scrollDiv a {
+  color: white;
+}
+
+a {
+  color: rgb(28,196,141);
+}
+
+a:hover {
+  color: rgb(28,196,141);
+}
+
+.navbar {
+  background: rgb(28,196,141);
+}
+
+.navbar a {
+  color: #000 !important;
+}
+
+.navbar a:hover {
+  color: #fff !important;
+  background: none !important;
+}
+
+.navbar li a:focus {
+	background: none !important;
+}
+
+.dropdown-menu {
+	background: rgb(28,196,141) !important;
+}
+
+#banner {
+    padding-top: 100px;
+    margin-top: -50px;
+}
